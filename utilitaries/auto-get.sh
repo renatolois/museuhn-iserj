@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PROJECT_DIR="./musehn-iserj"
-PROJECT_URL="https://renatolois/museuhn-iserj"
+PROJECT_URL="https://github.com/renatolois/museuhn-iserj"
 
 if [ -e "$PROJECT_DIR" ]; then
   ALREADY_EXISTS=true
