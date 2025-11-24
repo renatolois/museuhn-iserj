@@ -16,6 +16,7 @@ run_project() {
 
   cd "$PROJECT_DIR"
 
+  echo ""
   echo "+---------------------------+"
   echo "|  1 - Rodar em http        |"
   echo "|  2 - Rodar em https       |"
@@ -34,6 +35,7 @@ run_project() {
     exit 1
   fi
 
+  echo ""
   read -p "Digite a porta para o servidor, deixe em branco para usar a porta padrão [padrão: $port]: " input_port
   if [ -z "$input_port" ]; then
     echo "usando porta padrão"
@@ -65,6 +67,7 @@ run_project() {
 }
 
 get_project() {
+  echo ""
   echo "Baixando o código do projeto..."
 
   rm -rf "$PROJECT_DIR"
@@ -75,10 +78,12 @@ get_project() {
 
 remove_project() {
   if [ ! -e "$PROJECT_DIR" ]; then
+    echo ""
     echo "O projeto não existe. Nada para remover."
     return
   fi
 
+  echo ""
   echo "Tem certeza que deseja remover o projeto? (y/n)"
   read confirm
 
@@ -132,10 +137,12 @@ echo "|           3 - Remover o projeto            |"
 echo "|                                            |"
 echo "+--------------------------------------------+"
 
+echo ""
 read -p "Escolha uma opção (1/2/3): " option
 
 if [ "$option" -eq 1 ]; then
   if [ "$ALREADY_EXISTS" = false ]; then
+    echo ""
     echo "O projeto não está baixado."
     read -p "Deseja baixar agora? (y/n): " choose
     if [ "$choose" = "y" ] || [ "$choose" = "Y" ]; then
