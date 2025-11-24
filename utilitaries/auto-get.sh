@@ -60,9 +60,10 @@ run_project() {
   fi
 
   echo ""
-  echo "============================================="
-  echo " Acesse no navegador: $protocol://127.0.0.1:$port"
-  echo "============================================="
+  echo "========================================================"
+  echo "    Acesse no navegador: $protocol://127.0.0.1:$port    "
+  echo "          para parar a execução use: Ctrl C             "
+  echo "========================================================"
   echo ""
 }
 
