@@ -1,7 +1,7 @@
 # Museu de História Natural do ISERJ – Site Interativo
 
 ## Sobre o projeto
-Este repositório reúne o projeto do site do Museu de História Natural do Instituto Superior de Educação do Rio de Janeiro (ISERJ), desenvolvido com a finalidade de tornar a visita ao museu mais interativa, envolvente e moderna. A proposta central é aproximar estudantes, visitantes e interessados da ciência por meio de recursos digitais, possibilitando uma experiência mais dinâmica tanto no ambiente escolar quanto fora dele.
+Este repositório reúne o projeto do site oficial do Museu de História Natural do Instituto Superior de Educação do Rio de Janeiro (ISERJ), desenvolvido com a finalidade de tornar a visita ao museu mais interativa, envolvente e moderna. A proposta central é aproximar estudantes, visitantes e interessados da ciência por meio de recursos digitais, possibilitando uma experiência mais dinâmica tanto no ambiente escolar quanto fora dele.
 
 ## Objetivos
 O projeto busca integrar mídias digitais ao acervo físico do Museu, oferecendo novas formas de interação com o conteúdo exposto. A ideia é proporcionar uma navegação educativa e intuitiva, fortalecendo o interesse pela biodiversidade e ampliando as possibilidades de estudo, observação e pesquisa científica.
