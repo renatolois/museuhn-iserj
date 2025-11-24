@@ -54,13 +54,6 @@ run_project() {
     port=$input_port
   fi
 
-
-  if [ "$server_type" -eq 1 ]; then
-    php -S 0.0.0.0:$port
-  else
-    echo "$port" | python3 ./utilitaries/https_server.py
-  fi
-
   echo ""
   echo "========================================================"
   echo "    Acesse no navegador: $protocol://127.0.0.1:$port    "
@@ -72,6 +65,12 @@ run_project() {
   echo "             ou repetindo o comando com curl            "
   echo "========================================================"
   echo ""
+
+  if [ "$server_type" -eq 1 ]; then
+    php -S 0.0.0.0:$port
+  else
+    echo "$port" | python3 ./utilitaries/https_server.py
+  fi
 }
 
 get_project() {
