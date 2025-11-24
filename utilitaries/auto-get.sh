@@ -9,7 +9,7 @@ else
   ALREADY_EXISTS=false
 fi
 
-PACKAGES="php nano unzip python openssl git"
+PACKAGES="php nano python openssl-tool git"
 
 run_project() {
   echo "Iniciando o projeto..."
