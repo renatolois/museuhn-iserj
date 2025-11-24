@@ -98,8 +98,12 @@ remove_project() {
 check_and_install_dependencies() {
   echo "verifying dependencies"
   for pkg in $PACKAGES; do
-    if command -v "$pkg" >/dev/null 2>&1; then
-      echo "[OK] $pkg is already installed. Skipping"
+    cmd="$pkg"
+    if [ "$pkg" = "openssl-tool" ]; then
+      cmd="openssl"
+    fi
+    if command -v "$cmd" >/dev/null 2>&1; then
+      echo "[OK] $pkg ($cmd) is already installed. Skipping"
     else
       echo "[..] Installing $pkg..."
       pkg install -y "$pkg"
