@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROJECT_DIR="./musehn-iserj"
+PROJECT_DIR="./museuhn-iserj"
 PROJECT_URL="https://github.com/renatolois/museuhn-iserj"
 
 if [ -e "$PROJECT_DIR" ]; then
@@ -103,7 +103,6 @@ check_and_install_dependencies() {
 }
 
 check_and_install_dependencies
-clear
 
 echo "----------------------------------------------"
 echo "|                                            | "
@@ -124,17 +123,14 @@ echo "|  0         0     0       0   01    0   0   |"
 echo "|  0         1     0  1    0    0    0       |"
 echo "|            1        1              0       |"
 echo "|                                            |"
-echo "----------------------------------------------"
-
-echo "+---------------------------+"
-echo "|                           |"
-echo "|       O que fazer?        |"
-echo "|                           |"
-echo "|  1 - Rodar a aplicação    |"
-echo "|  2 - Baixar o projeto     |"
-echo "|  3 - Remover o projeto    |"
-echo "|                           |"
-echo "+---------------------------+"
+echo "|                                            |"
+echo "|               O que fazer?                 |"
+echo "|                                            |"
+echo "|           1 - Rodar a aplicação            |"
+echo "|           2 - Baixar o projeto             |"
+echo "|           3 - Remover o projeto            |"
+echo "|                                            |"
+echo "+--------------------------------------------+"
 
 read -p "Escolha uma opção (1/2/3): " option
 
