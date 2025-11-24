@@ -98,7 +98,7 @@ remove_project() {
 check_and_install_dependencies() {
   echo "verifying dependencies"
   for pkg in $PACKAGES; do
-    if command -v "$cmd" >/dev/null 2>&1; then
+    if command -v "$pkg" >/dev/null 2>&1; then
       echo "[OK] $pkg is already installed. Skipping"
     else
       echo "[..] Installing $pkg..."
