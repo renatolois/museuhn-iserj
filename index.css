@@ -1,0 +1,153 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2b;
+}
+
+section .mainText {
+    padding: 20px 20px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d3b50;
+    color: white;
+    padding: 20px 0;
+}
+
+header img {
+    max-height: 150px;
+    
+}
+
+.logo {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    filter: brightness(0) invert(1);
+}
+
+header img {
+    filter: brightness(0) invert(1);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #20d0c6;
+    transform: scale(1.1);
+}
+
+main section p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: justify;
+    max-width: 800px;
+    margin: 45px auto;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+        margin: 5px 0;
+    }
+}
+
+.text-container {
+    padding: 30px;
+    font-size: 1.2rem;
+    text-indent: 40px;
+}
+
+.ar-button {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.btn-ar {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00b0a6;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pdf-button {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.btn-pdf {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff5c5c;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-ar:hover {
+    background-color: #1a9f94;
+    transform: scale(1.05);
+}
+
+.extern-container {
+    margin: 2%;
+}

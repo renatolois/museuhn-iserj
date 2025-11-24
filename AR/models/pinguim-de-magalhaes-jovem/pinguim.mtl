@@ -1,0 +1,9 @@
+# Laboratório de Design e Seleção de Materiais (LdSM)
+# Universidade Federal do Rio Grande do Sul (UFRGS)
+# https://www.ufrgs.br/ldsm/3d
+
+newmtl lambert9SG
+Kd 1 1 1
+map_Kd pinguim_t.jpg
+norm pinguim_n.jpg
+Ns 80

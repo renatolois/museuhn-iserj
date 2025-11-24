@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu de História Natural</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="carousel.css" type="text/css">
+</head>
+<body>
+    <header>
+        <img src="img/logo_iserj.webp" alt="Logo ISERJ" class="logo">
+        <div class="container">
+            <h1>Museu de História Natural - ISERJ</h1>
+            <nav>
+                <ul>
+                    <li><a href="pelicano-crespo.html">Pelicano-Crespo</a></li>
+                    <li><a href="pinguim-de-magalhaes.html">Pinguim-de-Magalhães</a></li>
+                    <li><a href="raia-viola.html">Raia-Viola</a></li>
+                    <li><a href="tartaruga-de-couro.html">Tartaruga-de-couro</a></li>
+                    <li><a href="tartaruga-de-pente.html">Tartaruga-de-Pente</a></li>
+                    <li><a href="toninha-franciscana.html">Toninha-Franciscana</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="mainText">
+            <div class="text-container">    
+                <p>O Museu de História Natural do ISERJ é um museu escolar, que possui um rico acervo didático-científico e de animais taxidermizados, com peças que datam dos séculos XIX e XX.</p>
+                <p>O objetivo do nosso projeto é tornar a visita ao museu mais interativa e envolvente, aproximando estudantes e visitantes da ciência de forma divertida e moderna. Por meio de recursos digitais, imagens interativas e modelos 3D de algumas espécies que temos, os usuários podem explorar os animais e peças do acervo diretamente pelo computador ou celular, aprendendo de forma divertida e prática sobre espécies, ecossistemas e história natural.</p>
+                <p>O projeto busca integrar tecnologia e educação, transformando a experiência tradicional de visitação em algo atrativo, educativo e memorável, incentivando a curiosidade científica e o interesse pelo mundo natural.</p>
+            </div>
+        </section>
+        
+        <div class="extern-container">
+            <section class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-item active">
+                        <div class="carousel-pelicano">
+                            <img src="img/pelicano-crespo.webp" alt="Pelicano-Crespo">
+                        </div>
+                        <div class="carousel-caption">
+                           <h2>Pelicano-Crespo</h2>
+                        <p>Grande ave marinha com plumagem branca e cinza. Seu bico longo possui uma bolsa elástica que usa para capturar peixes, sendo um caçador ágil nas águas costeiras.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/pinguim-de-magalhaes.webp" alt="Pinguim-de-Magalhães">
+                    <div class="carousel-caption">
+                        <h2>Pinguim-de-Magalhães</h2>
+                        <p>Vive no hemisfério sul, especialmente em colônias na Argentina e Chile. Nada muito bem mesmo sem voar, e se alimenta de peixes, lulas e pequenos crustáceos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/raia-viola.webp" alt="Raia-Viola">
+                        <div class="carousel-caption">
+                        <h2>Raia-Viola</h2>
+                        <p>Peixe achatado que vive no fundo do mar brasileiro. Alimenta-se de crustáceos e moluscos e está em risco crítico de extinção, principalmente por captura acidental em redes de pesca.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                        <img src="img/tartaruga-de-couro.webp" alt="Tartaruga-de-Couro">
+                        <div class="carousel-caption">
+                            <h2>Tartaruga-de-Couro</h2>
+                            <p>A maior tartaruga marinha do mundo, com carapaça flexível coberta de pele. Vive no oceano aberto, alimentando-se principalmente de águas-vivas, e realiza longas migrações.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/toninha.webp" alt="Toninha-Franciscana">
+                        <div class="carousel-caption">
+                            <h2>Toninha-Franciscana</h2>
+                            <p>Um pequeno golfinho encontrado na costa atlântica da América do Sul.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/tartaruga-de-pente.webp" alt="Tartaruga-de-Pente">
+                        <div class="carousel-caption">
+                            <h2>Tartaruga-de-Pente</h2>
+                            <p>Tartaruga tropical com carapaça escamosa e colorida. Vive em recifes de corais e águas costeiras, alimentando-se de pequenos invertebrados. É criticamente ameaçada devido à ação humana.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+                <div class="carousel-indicators"></div>
+            </section>
+        </div>
+        <section class="pdf-button">
+            <a href="documentation.html" class="btn-pdf">Fichas Zoológicas</a>
+        </section>
+        <section class="ar-button">
+            <a href="AR/" class="btn-ar">Explorar em Realidade Aumentada</a>
+        </section>
+    </main>
+    <script src="carousel.js"></script>
+</body>
+</html>

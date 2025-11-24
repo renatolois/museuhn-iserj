@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Toninha-Franciscana</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #eee;
+    }
+    #pdf-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    canvas {
+      margin: 10px 0;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="pdf-container"></div>
+  <!-- Estranhamente, o infinity free nao esta aceitando usar o nome toninha-franciscana.pdf, da 404, porém com outro nome funciona -->
+  <script src="load-pdf.js"></script>
+  <script>
+      load_pdf('pdf/toninha-franciscana_doc.pdf');
+  </script>
+</body>
+</html>
