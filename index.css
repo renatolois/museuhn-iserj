@@ -27,7 +27,6 @@ header img {
 .logo {
     position: relative;
     top: 20px;
-    left: 20px;
     width: 100px;
     filter: brightness(0) invert(1);
 }
