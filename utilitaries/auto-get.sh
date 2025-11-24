@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# one line comand: [ -f ~/museuhn.sh ] || curl -fsSL https://raw.githubusercontent.com/renatolois/museuhn-iserj/refs/heads/main/utilitaries/auto-get.sh -o ~/museuhn.sh; bash ~/museuhn.sh
+
 PROJECT_DIR="./museuhn-iserj"
 PROJECT_URL="https://github.com/renatolois/museuhn-iserj"
 
@@ -63,6 +65,11 @@ run_project() {
   echo "========================================================"
   echo "    Acesse no navegador: $protocol://127.0.0.1:$port    "
   echo "          para parar a execução use: Ctrl C             "
+  echo "  para rodar a aplicação novamente, é possível usando:  "
+  echo "                                                        "
+  echo "                    bash museuhn.sh                     "
+  echo "                                                        "
+  echo "             ou repetindo o comando com curl            "
   echo "========================================================"
   echo ""
 }
