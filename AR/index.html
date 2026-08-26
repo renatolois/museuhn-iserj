@@ -1,6 +1,5 @@
 <!--
     Modelos 3d retirados de: https://www.ufrgs.br/ldsm/3d/mucin/
-    OBS: lembrar de autorização!
 -->
 
 <!DOCTYPE html>
@@ -132,7 +131,7 @@
         .a-enter-vr {
             display: none !important;
         }
-		
+        
         @media (max-width: 650px) {
             header {
                 align-items: center;
@@ -285,11 +284,65 @@
     </script>
 
     <a-scene embedded arjs>
+        <a-assets>
+            <!-- Baleia-Jubarte Esqueleto -->
+            <!--
+            <a-asset-item id="baleia-obj" src="models/baleia-jubarte-esqueleto/baleia.obj"></a-asset-item>
+            <a-asset-item id="baleia-mtl" src="models/baleia-jubarte-esqueleto/baleia.mtl"></a-asset-item>
+            -->
+
+            <!-- Coruja-Buraqueira -->
+            <a-asset-item id="coruja-obj" src="models/coruja-buraqueira/coruja.obj"></a-asset-item>
+            <a-asset-item id="coruja-mtl" src="models/coruja-buraqueira/coruja.mtl"></a-asset-item>
+            
+            <!-- Lagarto -->
+            <a-asset-item id="lagarto-obj" src="models/lagarto-de-papo-amarelo/lagarto.obj"></a-asset-item>
+            <a-asset-item id="lagarto-mtl" src="models/lagarto-de-papo-amarelo/lagarto.mtl"></a-asset-item>
+            
+            <!-- Lobo Marinho -->
+            <a-asset-item id="lobo-obj" src="models/lobo-marinho-sul-americano/leaomarinho.obj"></a-asset-item>
+            <a-asset-item id="lobo-mtl" src="models/lobo-marinho-sul-americano/leaomarinho.mtl"></a-asset-item>
+            
+            <!-- Petrel -->
+            <a-asset-item id="petrel-obj" src="models/petrel-gigante/petrelgigante.obj"></a-asset-item>
+            <a-asset-item id="petrel-mtl" src="models/petrel-gigante/petrelgigante.mtl"></a-asset-item>
+            
+            <!-- Pinguim Adulto -->
+            <a-asset-item id="pinguim-adulto-obj" src="models/pinguim-de-magalhaes-adulto/pinguimdeitado.obj"></a-asset-item>
+            <a-asset-item id="pinguim-adulto-mtl" src="models/pinguim-de-magalhaes-adulto/pinguimdeitado.mtl"></a-asset-item>
+            
+            <!-- Pinguim Jovem -->
+            <a-asset-item id="pinguim-jovem-obj" src="models/pinguim-de-magalhaes-jovem/pinguim.obj"></a-asset-item>
+            <a-asset-item id="pinguim-jovem-mtl" src="models/pinguim-de-magalhaes-jovem/pinguim.mtl"></a-asset-item>
+            
+            <!-- Tartaruga Cabeçuda Casco -->
+            <a-asset-item id="tartaruga-cabecuda-obj" src="models/tartaruga-cabecuda-casco/cascotartaruga_01.obj"></a-asset-item>
+            <a-asset-item id="tartaruga-cabecuda-mtl" src="models/tartaruga-cabecuda-casco/cascotartaruga_01.mtl"></a-asset-item>
+            
+            <!-- Tartaruga de Couro -->
+            <a-asset-item id="tartaruga-de-couro-obj" src="models/tartaruga-de-couro/LeatherbackTurtle_FreeDownload.obj"></a-asset-item>
+            <a-asset-item id="tartaruga-de-couro-mtl" src="models/tartaruga-de-couro/LeatherbackTurtle_FreeDownload.mtl"></a-asset-item>
+
+            <!-- Tartaruga Pente -->
+            <!--
+            <a-asset-item id="tartaruga-pente-obj" src="models/tartaruga-de-pente-casco/cascopequeno.obj"></a-asset-item>
+            <a-asset-item id="tartaruga-pente-mtl" src="models/tartaruga-de-pente-casco/cascopequeno.mtl"></a-asset-item>
+            -->
+
+            <!-- Tartaruga Pente Casco -->
+            <a-asset-item id="tartaruga-pente-casco-obj" src="models/tartaruga-de-pente/Turtle_fixed.obj"></a-asset-item>
+            <a-asset-item id="tartaruga-pente-casco-mtl" src="models/tartaruga-de-pente/Turtle_fixed.obj.mtl"></a-asset-item>
+            
+            <!-- Tartaruga Verde -->
+            <a-asset-item id="tartaruga-verde-obj" src="models/tartaruga-verde/tartaruga.obj"></a-asset-item>
+            <a-asset-item id="tartaruga-verde-mtl" src="models/tartaruga-verde/tartaruga.mtl"></a-asset-item>
+        </a-assets>
+
         <!-- Pinguim-de-Magalhães adulto -->
         <a-marker type="pattern" url="markers/pinguim-de-magalhaes-adulto.patt">
             <a-entity
                 obj-model="obj: models/pinguim-de-magalhaes-adulto/pinguimdeitado.obj; mtl: models/pinguim-de-magalhaes-adulto/pinguimdeitado.mtl"
-                scale="0.006 0.006 0.006"
+                scale="0.008 0.008 0.008"
                 position="-0.2 0 0"
                 rotation="35 70 270"
             ></a-entity>
@@ -305,6 +358,16 @@
             ></a-entity>
         </a-marker>
 
+        <!-- Tartaruga-Cabeçuda Casco -->
+        <a-marker type="pattern" url="markers/tartaruga-cabecuda-casco.patt">
+            <a-entity
+                obj-model="obj: models/tartaruga-cabecuda-casco/cascotartaruga_01.obj; mtl: models/tartaruga-cabecuda-casco/cascotartaruga_01.mtl"
+                scale="0.004 0.004 0.004"
+                position="0 0 0"
+                rotation="190 30 0"
+            ></a-entity>
+        </a-marker>
+
         <!-- Tartaruga-de-Pente Casco -->
         <a-marker type="pattern" url="markers/tartaruga-de-pente-casco.patt">
             <a-entity
@@ -314,7 +377,57 @@
                 rotation="10 230 0"
             ></a-entity>
         </a-marker>
-        
+                
+        <!-- Tartaruga de Couro -->
+        <a-marker type="pattern" url="markers/tartaruga-de-couro.patt">
+            <a-entity
+                obj-model="obj: models/tartaruga-de-couro/LeatherbackTurtle_FreeDownload.obj; mtl: models/tartaruga-de-couro/LeatherbackTurtle_FreeDownload.mtl"
+                scale="0.3 0.48 0.3"
+                position="0.2 0 0"
+                rotation="250 340 0"
+            ></a-entity>
+        </a-marker>
+
+        <!-- Coruja-Buraqueira -->
+        <a-marker type="pattern" url="markers/coruja-buraqueira.patt">
+            <a-entity
+                obj-model="obj: models/coruja-buraqueira/coruja.obj; mtl: models/coruja-buraqueira/coruja.mtl"
+                scale="0.01 0.01 0.01"
+                position="0 0.1 0"
+                rotation="-90 0 0"
+            ></a-entity>
+        </a-marker>
+
+        <!-- Lagarto-de-Papo-Amarelo -->
+        <a-marker type="pattern" url="markers/lagarto-de-papo-amarelo.patt">
+            <a-entity
+                obj-model="obj: models/lagarto-de-papo-amarelo/lagarto.obj; mtl: models/lagarto-de-papo-amarelo/lagarto.mtl"
+                scale="0.008 0.008 0.008"
+                position="0.003 0 0"
+                rotation="180 330 0"
+            ></a-entity>
+        </a-marker>
+
+        <!-- Lobo-Marinho-Sul-Americano -->
+        <a-marker type="pattern" url="markers/lobo-marinho-sul-americano.patt">
+            <a-entity
+                obj-model="obj: models/lobo-marinho-sul-americano/leaomarinho.obj; mtl: models/lobo-marinho-sul-americano/leaomarinho.mtl"
+                scale="0.007 0.007 0.007"
+                position="0 0 0"
+                rotation="-90 90 -90"
+            ></a-entity>
+        </a-marker>
+
+        <!-- Petrel-Gigante -->
+        <a-marker type="pattern" url="markers/petrel-gigante.patt">
+            <a-entity
+                obj-model="obj: models/petrel-gigante/petrelgigante.obj; mtl: models/petrel-gigante/petrelgigante.mtl"
+                scale="0.002 0.002 0.002"
+                position="0 0 0"
+                rotation="-90 90 -90"
+            ></a-entity>
+        </a-marker>
+
         <!-- Tartaruga-de-Pente  - 'mtl' ins't loading -->
         <!--
         <a-marker type="pattern" url="markers/tartaruga-de-pente.patt">
@@ -326,13 +439,35 @@
             ></a-entity>
         </a-marker>
         -->
-                
+
+        <!-- Baleia-Jubarte Esqueleto -->
+        <!--
+        <a-marker type="pattern" url="markers/baleia-jubarte-esqueleto.patt">
+            <a-entity
+                obj-model="obj: models/baleia-jubarte-esqueleto/baleia.obj; mtl: models/baleia-jubarte-esqueleto/baleia.mtl"
+                scale="0.005 0.005 0.005"
+                position="0 0 0"
+                rotation="0 0 0"
+            ></a-entity>
+        </a-marker>
+        -->
+
+        <!-- Tartaruga-Verde -->
+        <a-marker type="pattern" url="markers/tartaruga-verde.patt">
+            <a-entity
+                obj-model="obj: models/tartaruga-verde/tartaruga.obj; mtl: models/tartaruga-verde/tartaruga.mtl"
+                scale="0.006 0.006 0.006"
+                position="0 0 0"
+                rotation="-90 90 -90"
+            ></a-entity>
+        </a-marker>
+
         <a-entity camera></a-entity>
     </a-scene>
     
     <!--
     <button onclick="toggleFullScreen()">FS</button>
-	-->	
+    -->    
 
     <script>
         let elem = document.documentElement;
@@ -373,9 +508,9 @@
     <footer style="position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.6); color: white; font-size: 12px; text-align: center; padding: 5px;">
   Alguns modelos 3D exibidos neste site são de autoria do 
   <a href="https://www.ufrgs.br/ldsm/3d/mucin/" target="_blank" rel="noopener" style="color: #aeefff;">
-    LDSM/UFRGS, MUCIN
-  	</a>,
-  	usados para fins educacionais (Museu de História Natural - ISERJ).
-	</footer>
+    LDSM / UFRGS, MUCIN
+      </a>,
+      usados para fins educacionais (Museu de História Natural — ISERJ).
+    </footer>
 </body>
 </html>

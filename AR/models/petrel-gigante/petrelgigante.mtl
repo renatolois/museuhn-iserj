@@ -1,0 +1,10 @@
+# Laboratório de Design e Seleção de Materiais (LdSM)
+# Universidade Federal do Rio Grande do Sul (UFRGS)
+# https://www.ufrgs.br/ldsm/3d
+
+
+newmtl lambert7SG
+Ns 50
+Kd 1 1 1
+map_Kd petrelgigante_t.jpg
+norm petrelgigante_n.jpg

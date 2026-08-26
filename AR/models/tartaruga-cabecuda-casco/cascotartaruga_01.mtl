@@ -1,0 +1,10 @@
+# Laboratório de Design e Seleção de Materiais (LdSM)
+# Universidade Federal do Rio Grande do Sul (UFRGS)
+# https://www.ufrgs.br/ldsm/3d
+
+
+newmtl lambert15SG
+Kd 1 1 1
+Ns 300
+map_Kd cascotartaruga_01_t.jpg
+norm cascotartaruga_01_n.jpg

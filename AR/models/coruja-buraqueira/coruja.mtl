@@ -1,0 +1,10 @@
+# Laboratório de Design e Seleção de Materiais (LdSM)
+# Universidade Federal do Rio Grande do Sul (UFRGS)
+# https://www.ufrgs.br/ldsm/3d
+
+
+newmtl lambert4SG
+Kd 1 1 1
+Ns 100
+map_Kd coruja_t.jpg
+norm coruja_n.jpg

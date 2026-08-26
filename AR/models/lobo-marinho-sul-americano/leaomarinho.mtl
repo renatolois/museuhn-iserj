@@ -1,0 +1,11 @@
+# Laboratório de Design e Seleção de Materiais (LdSM)
+# Universidade Federal do Rio Grande do Sul (UFRGS)
+# https://www.ufrgs.br/ldsm/3d
+
+newmtl lambert3SG
+Kd 1 1 1
+Ks 0.1 0.1 0.1
+
+map_Kd leaomarinho_t.jpg
+norm leaomarinho_n.jpg
+Ns 50

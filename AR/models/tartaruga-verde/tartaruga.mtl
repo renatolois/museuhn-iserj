@@ -1,0 +1,11 @@
+# Laboratório de Design e Seleção de Materiais (LdSM)
+# Universidade Federal do Rio Grande do Sul (UFRGS)
+# https://www.ufrgs.br/ldsm/3d
+
+newmtl lambert11SG
+Kd 1 1 1
+Ns 150
+Ks 0.1 0.1 0.1
+map_Kd tartaruga_t.png
+norm tartaruga_n.jpg
+

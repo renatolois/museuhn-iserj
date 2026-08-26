@@ -1,0 +1,45 @@
+# Laboratório de Design e Seleção de Materiais (LDSM)
+# Universidade Federal do Rio Grande do Sul (UFRGS)
+# https://www.ufrgs.br/ldsm/3d
+
+newmtl Baleia_U1V1
+Kd 1 1 1
+Ns 100
+Ks 0.1 0.1 0.1
+norm baleia_11_n.jpg
+map_Kd baleia_11_d.jpg
+
+newmtl Baleia_U1V2
+Kd 1 1 1
+Ns 100
+Ks 0.1 0.1 0.1
+norm baleia_12_n.jpg
+map_Kd baleia_12_d.jpg
+
+newmtl Baleia_U2V1
+Kd 1 1 1
+Ns 100
+Ks 0.1 0.1 0.1
+norm baleia_21_n.jpg
+map_Kd baleia_21_d.jpg
+
+newmtl Baleia_U2V2
+Kd 1 1 1
+Ns 100
+Ks 0.1 0.1 0.1
+norm baleia_22_n.jpg
+map_Kd baleia_22_d.jpg
+
+newmtl Baleia_U3V1
+Kd 1 1 1
+Ns 100
+Ks 0.1 0.1 0.1
+norm baleia_31_n.jpg
+map_Kd baleia_31_d.jpg
+
+newmtl Baleia_U3V2
+Kd 1 1 1
+Ns 100
+Ks 0.1 0.1 0.1
+norm baleia_32_n.jpg
+map_Kd baleia_32_d.jpg
