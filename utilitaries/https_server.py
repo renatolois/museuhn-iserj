@@ -4,7 +4,7 @@ import os
 import ssl
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 
-port = int(input())
+port = int(input('enter port: ', end=''))
 
 context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
 # i have used this to generate the keys: openssl req -x509 -newkey rsa:2048 -nodes -keyout /tmp/https_server_temporary_key.pem -out /tmp/https_server_temporary_cert.pem -days 365 -subj "/C=US/ST=State/L=City/O=Organization/CN=localhost"
